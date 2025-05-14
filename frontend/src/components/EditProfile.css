@@ -1,0 +1,297 @@
+.edit-profile {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.edit-profile h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.edit-profile form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Section Styling */
+.edit-profile section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.edit-profile section h2 {
+  color: #1976d2;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Form Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+/* File Input Styling */
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.form-group input[type="file"]:hover {
+  border-color: #1976d2;
+}
+
+/* Current Document Display */
+.current-document {
+  margin-top: 10px;
+  padding: 10px;
+  background: #e3f2fd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-document a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.button-group button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-group button[type="button"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.button-group button[type="submit"] {
+  background: #1976d2;
+  color: white;
+}
+
+.button-group button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button-group button[type="button"]:hover {
+  background: #d5d5d5;
+}
+
+.button-group button[type="submit"]:hover {
+  background: #1565c0;
+}
+
+.button-group button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error Message Styling */
+.error-message {
+  background: #ffebee;
+  color: #d32f2f;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Success Message Styling */
+.success-message {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-profile {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .edit-profile form {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}
+
+/* Educational Qualifications Section */
+.education-section {
+  margin-top: 20px;
+}
+
+.education-item {
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Document Preview */
+.document-preview {
+  margin-top: 10px;
+}
+
+.document-preview img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Required Field Indicator */
+.required-field::after {
+  content: '*';
+  color: #d32f2f;
+  margin-left: 4px;
+}
+
+/* Tooltip for file size limit */
+.file-tooltip {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Custom Select Styling */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+/* Input Placeholder Styling */
+::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+/* Focus Outline */
+:focus {
+  outline: none;
+}
+
+/* Validation States */
+.form-group.has-error input {
+  border-color: #d32f2f;
+}
+
+.form-group.has-error .error-text {
+  color: #d32f2f;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.form-group.has-success input {
+  border-color: #2e7d32;
+}
+
+/* Animation for Success/Error Messages */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.error-message,
+.success-message {
+  animation: slideIn 0.3s ease-out;
+} 
+

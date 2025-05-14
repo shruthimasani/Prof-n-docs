@@ -1,0 +1,382 @@
+/* Faculty Dashboard Styles */
+.faculty-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.dashboard-header {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4a90e2;
+}
+
+.profile-details h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5em;
+}
+
+.profile-details p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Stats Container */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-card h3 svg {
+  color: #4a90e2;
+}
+
+.stat-number {
+  color: #2c3e50;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Main Content */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* Profile Sections */
+.profile-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.section-header h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.section-content {
+  display: grid;
+  gap: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.info-item:hover {
+  background: #f0f2f5;
+}
+
+.info-label {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.info-value {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Buttons */
+.action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background: #4a90e2;
+  color: white;
+}
+
+.edit-button:hover {
+  background: #357abd;
+}
+
+.logout-button {
+  background: #e74c3c;
+  color: white;
+}
+
+.logout-button:hover {
+  background: #c0392b;
+}
+
+/* Publications Section */
+.publications-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.publication-list {
+  display: grid;
+  gap: 15px;
+}
+
+.publication-item {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.publication-item:hover {
+  transform: translateX(5px);
+}
+
+.publication-title {
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.publication-meta {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading and Error States */
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  color: #e74c3c;
+  background: #fde8e8;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faculty-dashboard {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* FacultyDashboard.css */
+.research-section {
+  padding: 20px;
+}
+
+.doi-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.doi-input input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.doi-input button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.research-list .research-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.similarity-score {
+  font-weight: bold;
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.collab-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.collab-list li {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #eef2ff;
+  border-left: 4px solid #5a67d8;
+  border-radius: 5px;
+}
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 10px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
