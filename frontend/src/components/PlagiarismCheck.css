@@ -1,0 +1,68 @@
+.plagiarism-check-container {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plagiarism-check-container h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.drop-box {
+  border: 2px dashed #aaa;
+  padding: 30px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.drop-box:hover {
+  background-color: #f9f9f9;
+}
+
+.file-input {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.plagiarism-result {
+  margin-top: 20px;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.plagiarism-result p {
+  margin-bottom: 10px;
+}
+
+.flagged {
+  color: #cc0000;
+  font-style: italic;
+}

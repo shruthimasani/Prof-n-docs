@@ -1,0 +1,44 @@
+.patent-tracker-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.patent-tracker-container h2 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 16px;
+}
+
+.patent-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patent-table th,
+.patent-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.patent-table th {
+  background-color: #f2f2f2;
+}
+
+.status-active {
+  color: green;
+  font-weight: bold;
+}
+
+.status-due-soon {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-expired {
+  color: red;
+  font-weight: bold;
+}

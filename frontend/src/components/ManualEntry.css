@@ -1,0 +1,60 @@
+.manual-form-container {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.manual-form h2 {
+  margin-bottom: 15px;
+}
+
+.manual-form .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.manual-form .input-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.manual-form .input-group input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-wrapper button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toast {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  animation: fadein 0.3s ease;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

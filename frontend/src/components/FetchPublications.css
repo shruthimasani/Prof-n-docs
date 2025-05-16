@@ -1,0 +1,57 @@
+.fetched-publications-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.fetched-publications-container h2 {
+  color: #003366;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.publication-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.publication-card:hover {
+  background: #f4f9ff;
+}
+
+.publication-header h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #002244;
+}
+
+.publication-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.publication-actions {
+  margin-top: 10px;
+}
+
+.publication-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #004080;
+  color: white;
+}
+
+.publication-actions button:hover {
+  background-color: #0059b3;
+}
